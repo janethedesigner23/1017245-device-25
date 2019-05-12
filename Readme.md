@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгения Яковлева](https://up.htmlacademy.ru/htmlcss/25/user/1017245).
-* Наставник: [Виктория Коваленко] (https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
