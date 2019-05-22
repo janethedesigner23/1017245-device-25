@@ -1,130 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <header class="main-header">
-      <nav>
-        <a class="main-logo">
-          <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина
-            «Девайс»">
-        </a>
-        <div class="search">Поиск по сайту</div>
-        <ul class="user-navigation">
-          <li class="user-navigation-link">
-            <a href="login.html">Войти</a>
-          </li>
-          <li class="user-navigation-link">
-            <a href="compare.html">Сравнить</a>
-          </li>
-          <li class="user-navigation-link">
-            <a href="cart.html">Корзина</a>
-          </li>
-        </ul>
-        <ul class="site-navigation">
-          <li class="site-navigation catalog-popup">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="garanty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-    <main class="container">
+<body>
 
-      <h1 class="visually-hidden">Магазин техники «Девайс»</h1>
-
-      <section class="about-us">
-
-        <h2>О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
-          работает со многими транспортными компаниями:
-        </p>
-        <ul class="partners-list">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="about-us.html">Подробнее о нас</a>
-
-      </section>
-
-      <section class="contacts">
-
-        <h2>Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <a href="map.html">
-          <img src="img/map.png" alt="Адрес: ул. Строителей, 15">
-        </a>
-        <a class="button" href="#">Напишите нам</a>
-
-      </section>
-
-    </main>
-
-    <footer class="main-footer">
-
+  <header class="main-header">
+    <nav>
       <a class="main-logo">
-        <img src="img/logo-footer.svg" alt="Логотип магазина «Девайс»">
+        <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина
+            «Девайс»">
       </a>
-      <ul class="footer-user-navigation">
-        <li><a href="login.html">Войти</a></li>
-        <li><a href="compare.html">Сравнить</a></li>
-        <li><a href="cart.html">Корзина</a></li>
+      <div class="search">
+        <form class="search search-form" method="POST" action="https://echo.htmlacademy.ru">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+      </div>
+      <ul class="user-navigation">
+        <li class="user-navigation-link">
+          <a href="login.html">Войти</a>
+        </li>
+        <li class="user-navigation-link">
+          <a href="compare.html">Сравнить</a>
+        </li>
+        <li class="user-navigation-link">
+          <a href="cart.html">Корзина</a>
+        </li>
       </ul>
-      <p class="footer-contacts">
-        г. Москва, ул. Строителей, 15
-      </p>
-      <p class="footer-contacts">
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      </p>
-      <ul class="footer-site-navigation">
+      <ul class="site-navigation">
+        <li class="site-navigation catalog">
+          <a href="catalog.html">Каталог товаров</a>
+          <ul class="catalog catalog-submenu">
+            <li class="catalog-submenu-element">
+              <a href="catalog.html">Виртуальная реальность</a>
+            </li>
+            <li class="catalog-submenu-element">
+              <a href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="catalog-submenu-element">
+              <a href="catalog.html">Экшн-камеры</a>
+            </li>
+            <li class="catalog-submenu-element">
+              <a href="catalog.html">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog-submenu-element">
+              <a href="catalog.html">Умные часы</a>
+            </li>
+            <li class="catalog-submenu-element">
+              <a href="catalog.html">Квадракоптеры</a>
+            </li>
+          </ul>
+        </li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="garanty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <h1 class="visually-hidden">Магазин техники «Девайс»</h1>
+
+    <section class="about-us">
+
+      <h2>О нас</h2>
+      <p>
+        Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+        каждом из нас.
+      </p>
+      <p>
+        Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+        работает со многими транспортными компаниями:
+      </p>
+      <ul class="partners-list">
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/html-academy-logo.svg" alt="Логотип HTML-академии">
+      <a class="button" href="about-us.html">Подробнее о нас</a>
+
+    </section>
+
+    <section class="contacts">
+
+      <h2>Контакты</h2>
+      <p>
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+        проверить работоспособность покупки. Всякое бывает.
+      </p>
+      <a href="map.html">
+        <img src="img/map.png" alt="Адрес: ул. Строителей, 15">
       </a>
-
-    </footer>
-
-    <section class="modal modal-map">
-
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947344!2d37.527429315801285!3d55.68703400453021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1557939504173!5m2!1sen!2sru"
-        style="border:0" allowfullscreen></iframe>
-      <span class="modal-close">X</span>
+      <a class="button" href="#">Напишите нам</a>
 
     </section>
 
-    <section class="modal modal-contact">
+  </main>
 
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <span class="button">Отправить</span>
-      <span class="modal-close">X</span>
+  <footer class="main-footer">
 
-    </section>
+    <a class="main-logo">
+      <img src="img/logo-footer.svg" alt="Логотип магазина «Девайс»">
+    </a>
+    <ul class="footer-user-navigation">
+      <li><a href="login.html">Войти</a></li>
+      <li><a href="compare.html">Сравнить</a></li>
+      <li><a href="cart.html">Корзина</a></li>
+    </ul>
+    <p class="footer-contacts">
+      г. Москва, ул. Строителей, 15
+    </p>
+    <p class="footer-contacts">
+      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    </p>
+    <ul class="footer-site-navigation">
+      <li><a href="delivery.html">Доставка</a></li>
+      <li><a href="garanty.html">Гарантия</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#">Твиттер</a></li>
+    </ul>
+    <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/html-academy-logo.svg" alt="Логотип HTML-академии">
+    </a>
 
-  </body>
+  </footer>
+
+  <section class="modal modal-map">
+
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947344!2d37.527429315801285!3d55.68703400453021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1557939504173!5m2!1sen!2sru"
+      style="border:0" allowfullscreen></iframe>
+    <button class="modal-close">Закрыть</button>
+
+  </section>
+
+  <section class="modal modal-contact">
+
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="contact-element">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p class="contact-element">
+        <label>
+          Ваш e-mail:
+          <input type="email" name="e-mail" placeholder="email@example.com">
+        </label>
+      </p>
+      <p class="contact-element">
+        <label>
+          Текст письма:
+          <input type="text" name="message" placeholder="В свободной форме">
+        </label>
+      </p>
+      <button type="submit" class="button">Отправить</button>
+    </form>
+    <button class="modal-close">Закрыть</button>
+
+  </section>
+
+</body>
+
 </html>
