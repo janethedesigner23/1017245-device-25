@@ -4,12 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="main-header">
-    <nav>
+    <nav class="main-navigation">
       <a class="main-logo" href="index.html">
         <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина
             «Девайс»">
@@ -83,32 +86,32 @@
           <ul>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-checkbox" type="checkbox" name="black" checked>
-                Черный
+                <input class="filter filter-input filter-input-checkbox" type="checkbox" name="black" checked>
+                <span>Черный</span>
               </label>
             </li>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-checkbox" type="checkbox" name="white">
-                Белый
+                <input class="filter filter-input filter-input-checkbox" type="checkbox" name="white">
+                <span>Белый</span>
               </label>
             </li>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-checkbox" type="checkbox" name="blue" checked>
-                Синий
+                <input class="filter filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
+                <span>Синий</span>
               </label>
             </li>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-checkbox" type="checkbox" name="red" checked>
-                Красный
+                <input class="filter filter-input filter-input-checkbox" type="checkbox" name="red" checked>
+                <span>Красный</span>
               </label>
             </li>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-checkbox" type="checkbox" name="pink">
-                Розовый
+                <input class="filter filter-input filter-input-checkbox" type="checkbox" name="pink">
+                <span>Розовый</span>
               </label>
             </li>
           </ul>
@@ -118,16 +121,16 @@
           <ul>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-radio" type="radio" name="bluetooth-accessibility"
+                <input class="filter filter-input filter-input-radio" type="radio" name="bluetooth-accessibility"
                   value="yes" checked>
-                Есть
+                <span>Есть</span>
               </label>
             </li>
             <li class="filter-option">
               <label>
-                <input class="filter filter-option filter-option-radio" type="radio" name="bluetooth-accessibility"
+                <input class="filter filter-input filter-inout-radio" type="radio" name="bluetooth-accessibility"
                   value="no">
-                Нет
+                <span>Нет</span>
               </label>
             </li>
           </ul>

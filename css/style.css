@@ -1,16 +1,341 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    src: url('/fonts/gilroyextrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2');
+    src: url('/fonts/gilroylight-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #464646;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: 0.17px;
+    color: #000000;
+}
+
+.main-navigation {
+    background-color: #f0c52e;
+}
+
+.main-logo:hover {
+    opacity: 0.6;
+}
+
+.main-logo:active {
+    opacity: 0.3;
+}
+
+.search-form input {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    opacity: 0.3;
+
+    background-color: transparent;
+    border: none;
+}
+
+.search-form input:hover {
+    opacity: 0.6;
+}
+
+.search-form input:focus {
+    opacity: 1;
+    border-bottom: 2px solid #000000;
+}
+
+.user-navigation {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-transform: none;
+}
+
+.site-navigation {
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.catalog-submenu {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-transform: none;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog .catalog-submenu {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+    opacity: 0.6;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+    opacity: 0.3;
+}
+
+.section-title {
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.partners-list {
+    list-style-type: circle;
+
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.button {
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f0c52e;
+}
+
+.button:active {
+    opacity: 0.3;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.footer-user-navigation {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-transform: none;
+}
+
+.footer-user-navigation a {
+    opacity: 0.7;
+}
+
+.footer-user-navigation a:hover {
+    opacity: 1;
+}
+
+.footer-contacts {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.footer-site-navigation {
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-site-navigation a:hover {
+    opacity: 0.6;
+}
+
+.footer-user-navigation a:active,
+.footer-site-navigation a:active {
+    opacity: 0.3;
+}
+
+.footer-site-navigation,
+.footer-user-navigation {
+    list-style: none;
+}
+
+.footer-social {
+    text-align: center;
+    list-style: none;
+    opacity: 0.3;
+}
+
+.footer-social a:hover {
+    opacity: 0.6;
+}
+
+.footer-social a:active {
+    opacity: 0.1;
+}
+
+.footer-contacts a,
+.footer-site-navigation a,
+.footer-user-navigation a,
+.footer-social a {
+    color: #ffffff;
+}
+
+.copyright:hover {
+    opacity: 0.6;
+}
+
+.copyright:active {
+    opacity: 0.3;
+}
+
+.modal {
+    display: none;
+}
+
+.breadcrumbs {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000;
+
+    list-style: none;
+}
+
+.breadcrumbs a {
+    opacity: 0.3;
+
+    color: #000000
+}
+
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+    opacity: 0.3;
+}
+
+.filter {
+    background-color: #eeeeee;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+  font-family: 'Gilroy', 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter-option {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 39px;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  color: #000000;
+}
+
+.filter-input:disabled + span {
+    color: #a6a6a6;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item h3 {
+  font-family: 'Gilroy', 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item-price {
+  font-family: 'Gilroy', 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #464646;
+}
+
+.catalog-item .label {
+  font-family: 'Gilroy', 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  opacity: 0.2;
 }
