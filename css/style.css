@@ -137,21 +137,54 @@ h1 {
     color: #000000;
 }
 
-.button {
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+.button,
+.filter-button {
     font-family: 'Gilroy', 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 40px;
     font-weight: 800;
     letter-spacing: 3.5px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
 
-    background-color: #f0c52e;
+    width: 220px;
+    height: 40px;
+    display: block;
+    position: relative;
+    z-index: 0;
 }
 
-.button:active {
-    opacity: 0.3;
+.button::before,
+.filter-button::before {
+    width: 100%;
+    height: 8px;
+    background-color: #f0c52e;
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 0px;
+    z-index: -1;
+}
+
+.button:hover::before,
+.filter-button:hover::before {
+    height: 40px;
+    position: absolute;
+    top: 0px;
+}
+
+.button:active,
+.filter-button:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
