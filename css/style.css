@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,6 +31,7 @@ a {
 }
 
 h1 {
+    margin: 0;
     font-family: 'Gilroy', 'Open Sans', sans-serif;
     font-size: 47px;
     line-height: 48px;
@@ -35,8 +40,23 @@ h1 {
     color: #000000;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .main-navigation {
-    background-color: #f0c52e;
+    background-color: rgba(240, 197, 46, 0.5);
+    width: 1160px;
+    margin: 40px auto 0;
+    padding: 50px 60px;
+}
+
+.main-logo {
+    display: block;
 }
 
 .main-logo:hover {
@@ -45,6 +65,11 @@ h1 {
 
 .main-logo:active {
     opacity: 0.3;
+}
+
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-form input {
@@ -70,6 +95,12 @@ h1 {
 }
 
 .user-navigation {
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    width: 500px;
+
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -79,6 +110,12 @@ h1 {
 }
 
 .site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+
+
     font-family: 'Gilroy', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -89,12 +126,18 @@ h1 {
 }
 
 .catalog-submenu {
+    display: none;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
     letter-spacing: 0.2px;
     text-transform: none;
+}
+
+.company-navigation {
+    display: flex;
+    width: 500px;
 }
 
 .site-navigation,
@@ -118,6 +161,18 @@ h1 {
     opacity: 0.3;
 }
 
+.logout {
+    opacity: 0.3;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto 90px;
+    justify-content: space-between;
+}
+
 .section-title {
     font-family: 'Gilroy', 'Open Sans', sans-serif;
     font-size: 47px;
@@ -125,6 +180,14 @@ h1 {
     font-weight: 800;
     letter-spacing: 0.2px;
     color: #000000;
+}
+
+.about-us {
+    width: 480px;
+}
+
+.contacts {
+    width: 560px;
 }
 
 .partners-list {
@@ -189,9 +252,27 @@ button {
 
 .main-footer {
     background-color: #464646;
+    width: 100%;
+    padding: 60px 0 65px;
+}
+
+.footer-content {
+    width: 1200px;
+    padding: 0 20px; 
+    margin: 0 auto;
+}
+
+.first-floor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .footer-user-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -208,7 +289,15 @@ button {
     opacity: 1;
 }
 
+.second-floor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
 .footer-contacts {
+    margin: 0;
+
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -219,6 +308,10 @@ button {
 }
 
 .footer-site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
     font-family: 'Gilroy', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -242,8 +335,18 @@ button {
     list-style: none;
 }
 
+.third-floor {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .footer-social {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+
     list-style: none;
     opacity: 0.3;
 }
@@ -263,6 +366,11 @@ button {
     color: #ffffff;
 }
 
+.copyright {
+    width: 360px;
+    text-align: right;
+}
+
 .copyright:hover {
     opacity: 0.6;
 }
@@ -275,7 +383,20 @@ button {
     display: none;
 }
 
+.catalog-title {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 35px 60px 45px;
+}
+
+.catalog-title h1 {
+    margin-bottom: 25px;
+}
+
 .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -299,11 +420,64 @@ button {
     opacity: 0.3;
 }
 
+.catalog-content {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
 .filter {
     background-color: #eeeeee;
+    width: 330px;
+    position: relative;
+}
+
+.filter-title {
+    background-color: #DBDBDB;
+    height: 70px;
+    padding-left: 60px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.filter-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #DBDBDB;
+    width: 100vw;
+    z-index: -1;
+}
+
+.catalog-content b {
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #eeeeee;
+    width: 100vw;
+    z-index: -1;
+}
+
+.filter-form {
+    padding: 0 60px;
 }
 
 .filter fieldset {
+    padding: 0;
     border: none;
 }
 
@@ -317,6 +491,8 @@ button {
 }
 
 .filter ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -333,11 +509,55 @@ button {
     color: #a6a6a6;
 }
 
+.catalog-sorting {
+    display: flex;
+    background-color: #eeeeee;
+    position: relative;
+    padding-left: 70px;
+}
+
+.catalog-sorting::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #eeeeee;
+    width: 100vw;
+    z-index: -1;
+}
+
+.sorting-list {
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 55px;
+    align-items: center;
+
+    list-style: none;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.sorting-list a {
+    color: #000000;
+}
+
 .catalog-list {
+    display: flex;
+    width: 760px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px;
+    padding: 0;
+
     list-style: none;
 }
 
 .catalog-item h3 {
+  margin: 0;
   font-family: 'Gilroy', 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -372,3 +592,4 @@ button {
 
   opacity: 0.2;
 }
+
