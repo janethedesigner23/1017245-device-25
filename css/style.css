@@ -165,10 +165,18 @@ h1 {
     opacity: 0.3;
 }
 
+.main {
+    overflow-x: hidden;
+}
+
 .container {
-    display: flex;
     width: 1200px;
     padding: 0 20px;
+    margin: 0 auto;
+}
+
+.company-info {
+    display: flex;
     margin: 0 auto 90px;
     justify-content: space-between;
 }
@@ -252,14 +260,7 @@ button {
 
 .main-footer {
     background-color: #464646;
-    width: 100%;
     padding: 60px 0 65px;
-}
-
-.footer-content {
-    width: 1200px;
-    padding: 0 20px; 
-    margin: 0 auto;
 }
 
 .first-floor {
@@ -434,7 +435,6 @@ button {
 
 .filter-title {
     background-color: #DBDBDB;
-    height: 70px;
     padding-left: 60px;
     margin-bottom: 70px;
     position: relative;
