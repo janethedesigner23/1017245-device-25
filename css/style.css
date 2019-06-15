@@ -123,12 +123,17 @@ h1 {
     text-transform: none;
 }
 
-.user-navigation-link {
+.user-navigation-link:last-child {
     margin-left: 35px;
 }
 
-.user-navigation-link:first-child {
-    margin: 0 auto 0 0;
+.user-navigation-link:nth-last-child(2) {
+    margin: 0 0 0 auto;
+}
+
+.logout {
+    opacity: 0.3;
+    margin-left: 15px;
 }
 
 .user-navigation-link {
@@ -281,9 +286,6 @@ h1 {
 }
 
 /* Main */
-.logout {
-    opacity: 0.3;
-}
 
 .main {
     overflow-x: hidden;
