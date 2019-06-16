@@ -32,6 +32,11 @@ ul {
     padding: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 
 a {
     text-decoration: none;
@@ -50,19 +55,19 @@ h1 {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Header */
@@ -612,7 +617,10 @@ button {
 /* Modal */
 
 .modal {
-    display: none;
+    /* display: none; */
+    width: 960px;
+    height: 550px;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2)
 }
 
 /* Catalog-page */
@@ -776,7 +784,7 @@ button {
     line-height: 39px;
     font-weight: 300;
     letter-spacing: 0.1px;
-  color: #000000;
+    color: #000000;
 }
 
 .filter-option label {
@@ -866,26 +874,53 @@ button {
     color: #000000;
 }
 
+.sorting-list-element {
+    margin-right: 30px;
+}
+
 .sorting-list a {
     color: #000000;
+    opacity: 0.3;
+}
+
+.sorting-list .chosen {
+    opacity: 1;
 }
 
 .catalog-list {
     display: flex;
-    width: 760px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 70px;
+    width: 760px;
+}
+
+.catalog-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    width: 360px;
+}
+
+.catalog-item-title {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 }
 
 .catalog-item h3 {
-  margin: 0;
-  font-family: 'Gilroy', 'Open Sans', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  color: #000000;
+    margin: 0;
+    width: 260px;
+
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    color: #000000;
 }
 
 .catalog-item a {
@@ -893,25 +928,42 @@ button {
 }
 
 .catalog-item-price {
-  font-family: 'Gilroy', 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  text-align: right;
-  color: #464646;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: right;
+    color: #464646;
 }
 
-.catalog-item .label {
-  font-family: 'Gilroy', 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+.catalog-item-image {
+    width: 360px;
+    height: 380px;
+    margin-bottom: 30px;
+}
 
-  opacity: 0.2;
+.new-item::after {
+    content: "New";
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    
+    width: 64px;
+    height: 64px;
+
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 64px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BEBEBE;
+
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
 
