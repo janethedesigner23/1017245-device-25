@@ -133,6 +133,12 @@ input[type="radio"].visually-hidden {
     text-transform: none;
 }
 
+.user-navigation-link {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
 .user-navigation-link:last-child {
     margin-left: 35px;
 }
@@ -144,12 +150,6 @@ input[type="radio"].visually-hidden {
 .logout {
     opacity: 0.3;
     margin-left: 15px;
-}
-
-.user-navigation-link {
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
 }
 
 .user-navigation-link .icon { 
@@ -239,6 +239,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     padding-right: 25px;
     display: inline-block;
+    z-index: 10;
 }
 
 .dropdown-title::after {
@@ -444,10 +445,10 @@ button {
 .footer-user-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
-    width: 325px;
+    width: 500px;
 
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
@@ -459,12 +460,20 @@ button {
 
 .footer-user-navigation-link {
     position: relative;
+    margin-left: 40px;
     padding-left: 25px;
     cursor: pointer;
+    opacity: 0.7;
 }
 
-.footer-user-navigation-link a {
-    opacity: 0.7;
+.footer-user-navigation-link:first-child {
+    margin-left: 0;
+}
+
+.footer-logout {
+    opacity: 1;
+    margin-left: 20px;
+    padding: 0;
 }
 
 .footer-user-navigation-link .icon { 
@@ -493,7 +502,7 @@ button {
     background: url("../img/cart-yellow.svg") no-repeat 0 0;
 }
 
-.footer-user-navigation-link a:hover {
+.footer-user-navigation-link:hover {
     opacity: 1;
 }
 
