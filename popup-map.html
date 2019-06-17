@@ -12,10 +12,9 @@
   </head>
 
   <body>
-
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-logo">
+        <a class="main-logo" href="index.html">
           <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина
             «Девайс»">
         </a>
@@ -126,58 +125,15 @@
 
     </main>
 
-    <footer class="main-footer">
-
-      <div class="container">
-        <div class="first-floor">
-          <a class="footer-logo">
-            <img src="img/logo-footer.svg" alt="Логотип магазина «Девайс»">
-          </a>
-          <ul class="footer-user-navigation">
-            <li class="footer-user-navigation-link">
-              <div class="icon footer-icon-login"></div>
-              <a href="login.html">Войти</a>
-            </li>
-            <li class="footer-user-navigation-link">
-              <div class="icon footer-icon-compare"></div>
-              <a href="compare.html">Сравнить</a>
-            </li>
-            <li class="footer-user-navigation-link">
-              <div class="icon footer-icon-cart"></div>
-              <a href="cart.html">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <div class="second-floor">
-          <p class="footer-contacts">
-            г. Москва, ул. Строителей, 15
-          </p>
-          <ul class="footer-navigation">
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="garanty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-          <a class="footer-contacts" href="tel:+74954959595">Тел.: +7 (495)
-            495-95-95</a>
-
-        </div>
-        <div class="third-floor">
-          <ul class="footer-social">
-            <li><a class="social-button" href="#"><img src="img/fb.svg"
-                  width="32px" height="32px" alt="Фейсбук"></a></li>
-            <li><a class="social-button" href="#"><img src="img/instagram.svg"
-                  width="32px" height="32px" alt="Инстаграм"></a></li>
-            <li><a class="social-button" href="#"><img src="img/twitter.svg"
-                  width="32px" height="32px" alt="Твиттер"></a></li>
-          </ul>
-          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/html-academy-logo.svg" alt="Логотип HTML-академии">
-          </a>
-        </div>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947344!2d37.527429315801285!3d55.68703400453021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1557939504173!5m2!1sen!2sru"
+          style="border:0" allowfullscreen>
+        </iframe>
       </div>
-
-    </footer>
-
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
-
 </html>
