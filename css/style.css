@@ -1,27 +1,15 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('/fonts/gilroyextrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/radomir_tinkov_-_gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/radomir_tinkov_-_gilroy-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('/fonts/gilroylight-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gilroyextrabold';
-    src: url('/fonts/gilroyextrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gilroylight';
-    src: url('/fonts/gilroylight-webfont.woff') format('woff');
+    src: url('../fonts/radomir_tinkov_-_gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/radomir_tinkov_-_gilroy-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -61,7 +49,7 @@ h1 {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 47px;
     line-height: 48px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 0.17px;
     color: #000000;
 }
@@ -204,7 +192,7 @@ h1 {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 3.6px;
     color: #000000;
     text-transform: uppercase;
@@ -321,7 +309,7 @@ h1 {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 47px;
     line-height: 48px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 0.2px;
     color: #000000;
 }
@@ -354,7 +342,7 @@ h1 {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 40px;
-    font-weight: 800;
+    font-weight: normal;
     color: #000000;
 }
 
@@ -381,7 +369,7 @@ button {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 40px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 3.5px;
     text-align: center;
     text-transform: uppercase;
@@ -529,7 +517,7 @@ button {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 3.6px;
     color: #ffffff;
     text-transform: uppercase;
@@ -654,7 +642,7 @@ body {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 0.2px;
     color: #000000;
 }
@@ -836,7 +824,7 @@ body {
 .catalog-content b {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: normal;
     line-height: 70px;
     letter-spacing: 3.5px;
     text-transform: uppercase;
@@ -871,7 +859,7 @@ body {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 0.2px;
     color: #000000;
 }
@@ -1050,7 +1038,7 @@ body {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 0.2px;
     color: #000000;
 }
@@ -1065,7 +1053,7 @@ body {
     font-family: 'gilroylight', 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: normal;
     letter-spacing: 0.2px;
     text-align: right;
     color: #464646;
@@ -1128,7 +1116,7 @@ body {
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 64px;
-    font-weight: 800;
+    font-weight: normal;
     letter-spacing: 0.2px;
     text-align: center;
     text-transform: uppercase;
