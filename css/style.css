@@ -1036,6 +1036,7 @@ body {
     width: 360px;
 }
 
+
 .catalog-item-title {
     order: 1;
     display: flex;
@@ -1046,7 +1047,7 @@ body {
 .catalog-item h3 {
     margin: 0;
     width: 260px;
-    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
@@ -1061,7 +1062,7 @@ body {
 .catalog-item-price {
     margin: 0;
     padding: 0;
-    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-family: 'gilroylight', 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -1071,9 +1072,50 @@ body {
 }
 
 .catalog-item-image {
+    position: relative;
     width: 360px;
     height: 380px;
     margin-bottom: 30px;
+}
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 380px;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-item-image:hover .image-hover {
+    display: flex;
+    cursor: pointer;
+}
+
+.button .add-to-cart-button {
+    margin-bottom: 10px;
+}
+
+.image-hover .add-to-compare {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0.13px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.image-hover .add-to-compare:hover {
+    opacity: 1;
+}
+
+.image-hover .add-to-compare:active {
+    opacity: 0.2;
 }
 
 .new-item::after {
