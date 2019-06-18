@@ -74,7 +74,7 @@ h1 {
     background-color: #F8E297;
     width: 1160px;
     margin: 40px auto 35px;
-    padding: 50px 60px;
+    padding: 35px 60px 50px;
 }
 
 .main-logo {
@@ -94,12 +94,20 @@ h1 {
 .navigation-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-form input {
+    width: 355px;
+
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 45px;
     font-weight: 300;
     letter-spacing: 0.2px;
     text-transform: none;
@@ -115,6 +123,43 @@ h1 {
 .search-form input:focus {
     opacity: 1;
     border-bottom: 2px solid #000000;
+}
+
+.search-form input:active {
+    opacity: 1;
+    border-bottom: 2px solid #000000;
+}
+
+.search-form .search-button {
+    display: none;
+    width: 85px;
+
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 45px;
+    font-weight: 300;
+    letter-spacing: 0.15px;
+    color: #000000;
+
+    border: 2px solid #000000;
+}
+
+.search-form .search-button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.search-form .search-button:active {
+    display: block;
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.search-form input:focus+.search-button {
+    display: block;
+}
+
+.search-form input:active+.search-button {
+    display: block;
 }
 
 /* User navigation */
@@ -236,7 +281,7 @@ h1 {
 
 .dropdown-title::after {
     position: absolute;
-    top: 2px;
+    top: 3px;
     right: 0;
     content: "";
     width: 16px;
