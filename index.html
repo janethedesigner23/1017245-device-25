@@ -115,8 +115,8 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a href="popup-map.html" class="map-image">
-            <img src="img/map.png" width="560px" height="220px" alt="Адрес: ул.
+          <a href="https://goo.gl/maps/62ddHP8vWDiMkTZJ9" class="map-image" target="_blank">
+            <img src="./img/map.png" width="560px" height="220px" alt="Адрес: ул.
               Строителей, 15, Москва">
           </a>
           <a class="button" href="form-popup.html">Напишите нам</a>
@@ -177,6 +177,52 @@
       </div>
 
     </footer>
+
+    <section class="modal modal-contact">
+
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="modal-contact-form"
+        action="https://echo.htmlacademy.ru"
+        method="post">
+
+        <div class="form-fields">
+          <div class="contact-element">
+            <label>
+              <span class="field-label">Ваше имя:</span>
+              <input class="form-input" type="text" name="name" placeholder="Имя
+                Фамилия">
+            </label>
+          </div>
+          <div class="contact-element">
+            <label>
+              <span class="field-label">Ваш e-mail:</span>
+              <input class="form-input" type="email" name="e-mail"
+                placeholder="email@example.com">
+            </label>
+          </div>
+          <div class="contact-element contact-element-comment">
+            <label>
+              <span class="field-label">Текст письма:</span>
+              <textarea class="textarea-input" type="text" name="message"
+                placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947344!2d37.527429315801285!3d55.68703400453021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1557939504173!5m2!1sen!2sru"
+          style="border:0" allowfullscreen>
+        </iframe>
+      </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
 
   </body>
 
