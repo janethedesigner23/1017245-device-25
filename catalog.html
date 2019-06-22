@@ -109,6 +109,26 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru"
               method="POST">
               <fieldset>
+                <legend>Стоимость</legend>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min">
+                    <label class="range-value min-price">
+                      <span>от</span>
+                      <input type="text" name="min-price" value="0">
+                    </label>
+                  </div>
+                  <div class="range-toggle range-toggle-max">
+                    <label class="range-value max-price">
+                      <span>до</span>
+                      <input type="text" name="max-price" value="5000">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
@@ -184,12 +204,20 @@
           <section class="catalog">
 
             <div class="catalog-sorting">
-              <b>Сортировка:</b>
-              <ul class="sorting-list">
-                <li class="sorting-list-element"><a class="chosen" href="#">По
-                    цене</a></li>
-                <li class="sorting-list-element"><a href="#">По типу</a></li>
-                <li class="sorting-list-element"><a href="#">По популярности</a></li>
+              <div class="sorting-by-types">
+                <b>Сортировка:</b>
+                <ul class="sorting-list">
+                  <li class="sorting-list-element"><a class="chosen" href="#">По
+                      цене</a></li>
+                  <li class="sorting-list-element"><a href="#">По типу</a></li>
+                  <li class="sorting-list-element"><a href="#">По популярности</a></li>
+                </ul>
+              </div>
+              <ul class="sorting-order">
+                <li class="sorting-order-button"><a class="min-to-max current"
+                    href="#" aria-label="От меньшего к большему"></a></li>
+                <li class="sorting-order-button"><a class="max-to-min" href="#"
+                    aria-label="От большего к меньшему"></a></li>
               </ul>
             </div>
 
@@ -260,6 +288,17 @@
                   </div>
                 </div>
               </li>
+            </ul>
+            <ul class="pagination-list">
+              <li class="pagination-item direction-button"><a>Назад</a></li>
+              <li class="pagination-item">
+                <ul class="pages-list">
+                  <li class="pages-list-item pages-item-current"><a>1</a></li>
+                  <li class="pages-list-item"><a>2</a></li>
+                  <li class="pages-list-item"><a href="#">3</a></li>
+                </ul>
+              </li>
+              <li class="pagination-item direction-button"><a>Вперед</a></li>
             </ul>
 
           </section>
