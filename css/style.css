@@ -61,7 +61,9 @@ button {
     cursor: pointer;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active), 
+input[type="checkbox"].visually-hidden, 
+input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -355,6 +357,241 @@ button {
     padding: 0 20px;
     margin: 0 auto;
 }
+
+/* Slider */
+
+.slider {
+    background: linear-gradient(180deg, rgba(248,226,151,1) 0%, rgba(248,226,151,1) 23%, rgba(255,255,255,1) 23%, rgba(255,255,255,1) 100%);
+    margin-bottom: 106px;
+}
+
+.slider-element {
+    display: none;
+    justify-content: space-between;
+    position: relative;
+}
+
+.slider .slide-1::before {
+    content: "01";
+    position: absolute;
+    top: -15px;
+    right: 48px;
+
+    font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    letter-spacing: 0.36px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.slider .slide-2::before {
+    content: "02";
+    position: absolute;
+    top: -15px;
+    right: 48px;
+
+    font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    letter-spacing: 0.36px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.slider .slide-3::before {
+    content: "03";
+    position: absolute;
+    top: -15px;
+    right: 48px;
+
+    font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    letter-spacing: 0.36px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.slider-element .slide-image,
+.slider-element .slide-description {
+    width: 560px;
+}
+
+.slide-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slide-header {
+    position: relative;
+    font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+    font-weight: normal;
+    color: #000000;
+
+    margin: 37px 0 20px;
+    padding-top: 41px;
+}
+
+.slide-header::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.slide-text {
+    margin-bottom: 44px;
+}
+
+.slide-control-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 49px;
+}
+
+.slide-control-elements .slider-button {
+    padding: 0 43px;
+}
+
+.slider-controls {
+    margin-right: 83px;
+    font-size: 0;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 21px;
+  
+    vertical-align: middle;
+  
+    background: url('../img/slider-button-empty.svg') 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.slider-controls label:last-child {
+    margin-right: 0;
+}
+
+#product-1:checked ~ .slider .slide-1,
+#product-2:checked ~ .slider .slide-2,
+#product-3:checked ~ .slider .slide-3 {
+  display: flex;
+}
+
+#product-1:checked ~ .slider label[for="product-1"],
+#product-2:checked ~ .slider label[for="product-2"],
+#product-3:checked ~ .slider label[for="product-3"] {
+    background: url('../img/slider-button.svg') 0 0 no-repeat;
+}
+
+.slider-element .parameters {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+.parameters-element {
+    margin-right: 77px;
+}
+
+.parameters-element .element-value {
+    margin-bottom: 7px;
+
+    font-family: 'gilroylight', 'Open Sans', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.36px;
+    font-weight: normal;
+}
+
+.parameters-element .element-definition {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.13px;
+    font-weight: 300;
+    color: #464646;
+}
+
+/* Popular-categories */
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.popular-item {
+    width: 160px;
+}
+
+.popular-item a {
+    font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.popular-item .popular-item-image {
+    width: 160px;
+    height: 160px;
+    background-color: #F8E297;
+    margin-bottom: 33px;
+}
+
+.popular-item .image-vr {
+    box-sizing: content-box;
+    padding: 52px 31px;
+}
+
+.popular-item .image-mono {
+    box-sizing: content-box;
+    padding: 43px 0 0 38px;
+}
+
+.popular-item .image-camera {
+    box-sizing: content-box;
+    padding: 38px 39px 34px 49px;
+}
+
+.popular-item .image-fitness {
+    box-sizing: content-box;
+    padding: 49px 24px 45px 28px;
+}
+
+.popular-item .image-watch {
+    box-sizing: content-box;
+    padding: 32px 48px 30px 55px;
+}
+
+.popular-item .image-copter {
+    box-sizing: content-box;
+    padding: 49px 14px 41px 13px;
+}
+
+.popular-item a:hover .popular-item-image {
+    background-color: #F0C52E;
+}
+
+.popular-item a:active img,
+.popular-item a:active .popular-item-label {
+    opacity: 0.3;
+}
+
+/* Company-info */
 
 .company-info {
     display: flex;
