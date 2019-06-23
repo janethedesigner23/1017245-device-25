@@ -300,21 +300,29 @@
         </section>
       </div>
 
-      <!-- <section class="services">
+      <section class="services">
         <div class="container">
           <input class="visually-hidden" type="radio" id="service-1"
-            name="toggle" checked>
+            name="toggle-service" checked>
           <input class="visually-hidden" type="radio" id="service-2"
-            name="toggle">
+            name="toggle-service">
           <input class="visually-hidden" type="radio" id="service-3"
-            name="toggle">
+            name="toggle-service">
           <div class="service-slider">
             <ul class="service-slider-list">
               <li class="service-slider-element service-slide-1">
-                <div class="service-slide-controls">
-                  <label class="button slider-button" for="service-1">Доставка</label>
-                  <label class="button slider-button" for="service-2">Гарантия</label>
-                  <label class="button slider-button" for="service-3">Кредит</label>
+                <div class="slider-element-separator">
+                  <div class="service-slide-controls">
+                    <label class="service-slide-tab" for="service-1">
+                      <div class="button slider-button">Доставка</div>
+                    </label>
+                    <label class="service-slide-tab" for="service-2">
+                      <div class="button slider-button">Гарантия</div>
+                    </label>
+                    <label class="service-slide-tab" for="service-3">
+                      <div class="button slider-button">Кредит</div>
+                    </label>
+                  </div>
                 </div>
                 <div class="service-slide-content">
                   <div class="service-description">
@@ -325,15 +333,71 @@
                       поднимая его на ваш этаж.
                     </p>
                   </div>
-                  <div class="service-slide-image">
+                  <div class="service-slide-image service-slide-image-1">
                     <img src="./img/delivery.svg" alt="Доставка">
+                  </div>
+                </div>
+              </li>
+              <li class="service-slider-element service-slide-2">
+                <div class="slider-element-separator">
+                  <div class="service-slide-controls">
+                    <label class="service-slide-tab" for="service-1">
+                      <div class="button slider-button">Доставка</div>
+                    </label>
+                    <label class="service-slide-tab" for="service-2">
+                      <div class="button slider-button">Гарантия</div>
+                    </label>
+                    <label class="service-slide-tab" for="service-3">
+                      <div class="button slider-button">Кредит</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="service-slide-content">
+                  <div class="service-description">
+                    <h2 class="service-slide-header">Гарантия</h2>
+                    <p class="servise-slide-text">
+                      Если из-за возгорания купленного у нас товара у вас сгорит
+                      дом — не переживайте, мы выдадим вам новый. Товар, не
+                      дом, конечно же.
+                    </p>
+                  </div>
+                  <div class="service-slide-image service-slide-image-2">
+                    <img src="./img/warranty.svg" alt="Гарантия">
+                  </div>
+                </div>
+              </li>
+              <li class="service-slider-element service-slide-3">
+                <div class="slider-element-separator">
+                  <div class="service-slide-controls">
+                    <label class="service-slide-tab" for="service-1">
+                      <div class="button slider-button">Доставка</div>
+                    </label>
+                    <label class="service-slide-tab" for="service-2">
+                      <div class="button slider-button">Гарантия</div>
+                    </label>
+                    <label class="service-slide-tab" for="service-3">
+                      <div class="button slider-button">Кредит</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="service-slide-content">
+                  <div class="service-description">
+                    <h2 class="service-slide-header">Кредит</h2>
+                    <p class="servise-slide-text">
+                      Залезть в долговую яму стало проще! Кредитные консультанты
+                      подберут для вас наиболее выгодные условия кредита.
+                      Выгодные для нашего банка, разумеется.
+                    </p>
+                  </div>
+                  <div class="service-slide-image service-slide-image-3">
+                    <img src="./img/credit.svg" alt="Кредит">
                   </div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <div class="container">
         <section class="brands">
@@ -343,7 +407,8 @@
               <a href="#">
                 <img src="./img/logo-1_color.png" width="260" height="100"
                   alt="DJI" class="logo-colorfull">
-                <img src="./img/logo-1.png" width="260" height="100" alt="DJI"
+                <img src="./img/logo-1.png" width="260" height="100"
+                  alt="DJI"
                   class="logo-monochrome">
               </a>
             </li>
@@ -359,7 +424,8 @@
               <a href="#">
                 <img src="./img/logo-3_color.png" width="260" height="100"
                   alt="GoPro" class="logo-colorfull">
-                <img src="./img/logo-3.png" width="260" height="100" alt="GoPro"
+                <img src="./img/logo-3.png" width="260" height="100"
+                  alt="GoPro"
                   class="logo-monochrome">
               </a>
             </li>
@@ -367,7 +433,8 @@
               <a href="#">
                 <img src="./img/logo-4_color.png" width="260" height="100"
                   alt="Vive" class="logo-colorfull">
-                <img src="./img/logo-4.png" width="260" height="100" alt="Vive"
+                <img src="./img/logo-4.png" width="260" height="100"
+                  alt="Vive"
                   class="logo-monochrome">
               </a>
             </li>
@@ -379,11 +446,13 @@
 
           <h2 class="section-title">О нас</h2>
           <p class="section-description">
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            Огромный выбор гаджетов не оставит равнодушным гика, который
+            есть в
             каждом из нас.
           </p>
           <p class="section-description">
-            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            DEVICE
             работает со многими транспортными компаниями:
           </p>
           <ul class="partners-list">
@@ -391,24 +460,26 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button about-us-button" href="about-us.html">Подробнее о нас</a>
+          <a class="button about-us-button" href="about-us.html">Подробнее о
+            нас</a>
         </section>
 
         <section class="contacts">
 
           <h2 class="section-title">Контакты</h2>
           <p class="section-description">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
+            сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
           <a href="https://goo.gl/maps/62ddHP8vWDiMkTZJ9" class="map-image"
             target="_blank">
-            <img src="./img/map.png" width="560px" height="222px" alt="Адрес:
+            <img src="./img/map.png" width="560px" height="222px"
+              alt="Адрес:
               ул.
               Строителей, 15, Москва">
           </a>
           <a class="button" href="form-popup.html">Напишите нам</a>
-
         </section>
       </div>
 
@@ -419,7 +490,8 @@
       <div class="container">
         <div class="first-floor">
           <a class="footer-logo">
-            <img src="img/logo-footer.svg" width="164" height="36" alt="Логотип
+            <img src="img/logo-footer.svg" width="164" height="36"
+              alt="Логотип
               магазина «Девайс»">
           </a>
           <ul class="footer-user-navigation">
@@ -454,13 +526,16 @@
           <ul class="footer-social">
             <li><a class="social-button" href="#"><img src="img/fb.svg"
                   width="32px" height="32px" alt="Фейсбук"></a></li>
-            <li><a class="social-button" href="#"><img src="img/instagram.svg"
+            <li><a class="social-button" href="#"><img
+                  src="img/instagram.svg"
                   width="32px" height="32px" alt="Инстаграм"></a></li>
             <li><a class="social-button" href="#"><img src="img/twitter.svg"
                   width="32px" height="32px" alt="Твиттер"></a></li>
           </ul>
-          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/html-academy-logo.svg" alt="Логотип HTML-академии">
+          <a class="copyright"
+            href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/html-academy-logo.svg" alt="Логотип
+              HTML-академии">
           </a>
         </div>
       </div>
@@ -478,7 +553,8 @@
           <div class="contact-element">
             <label>
               <span class="field-label">Ваше имя:</span>
-              <input class="form-input" type="text" name="name" placeholder="Имя
+              <input class="form-input" type="text" name="name"
+                placeholder="Имя
                 Фамилия">
             </label>
           </div>
