@@ -369,6 +369,15 @@ button {
     position: relative;
 }
 
+.slide-text {
+    margin-bottom: 44px;
+    width: 475px;
+}
+
+.slider .slide-1 .slide-header {
+    width: 390px;
+}
+
 .slider .slide-1::before {
     content: "01";
     position: absolute;
@@ -382,6 +391,14 @@ button {
     color: #ffffff;
 }
 
+.slider .slide-2 .slide-header {
+    width: 255px;
+}
+
+.slider .slide-2 .slide-text {
+    width: 445px;
+}
+
 .slider .slide-2::before {
     content: "02";
     position: absolute;
@@ -393,6 +410,10 @@ button {
     letter-spacing: 0.36px;
     font-weight: normal;
     color: #ffffff;
+}
+
+.slider .slide-3 .slide-text {
+    width: 470px;
 }
 
 .slider .slide-3::before {
@@ -438,9 +459,6 @@ button {
     background-color: #ffffff;
 }
 
-.slide-text {
-    margin-bottom: 44px;
-}
 
 .slide-control-elements {
     display: flex;
@@ -545,6 +563,10 @@ button {
 .popular-item .image-mono {
     box-sizing: content-box;
     padding: 43px 0 0 38px;
+}
+
+.popular-item .popular-item-label-monopod {
+    width: 95px;
 }
 
 .popular-item .image-camera {
