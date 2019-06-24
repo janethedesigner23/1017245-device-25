@@ -1064,7 +1064,6 @@ body {
 }
 
 .modal {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1086,8 +1085,12 @@ body {
     height: 100%;
 }
 
+.modal-map {
+    display: none;
+}
+
 .modal-contact {
-    padding: 125px 100px 80px;
+    padding: 92px 100px 80px;
 }
 
 .form-fields {
@@ -1101,30 +1104,23 @@ body {
     flex-basis: 100%;
 }
 
-.contact-element label {
-    position: relative;
-}
 
 .contact-element .field-label {
-    position: absolute;
-    top: -45px;
-    left: 0;
+    display: block;
     font-family: 'gilroyextrabold', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
     letter-spacing: 0.2px;
     color: #000000;
-}
-
-.contact-element-comment .field-label {
-    top: -32px;
+    margin-bottom: 8px;
 }
 
 .contact-element .form-input {
+    display: block;
     width: 360px;
-    margin: 0 0 65px;
-    padding: 15px 20px;
+    margin: 0 0 35px;
+    padding: 15px 20px 17px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
