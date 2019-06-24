@@ -88,7 +88,7 @@ button {
     display: inline-block;
     width: 164px;
     height: 36px;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
 }
 
 .main-logo:hover {
@@ -103,10 +103,11 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 29px;
 }
 
 .search {
-    height: 45px;
+    height: 50px;
 }
 
 .search-form {
@@ -117,15 +118,19 @@ button {
 
 .search-form input {
     width: 355px;
+    padding-left: 40px;
+
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 15px;
     line-height: 45px;
     font-weight: 300;
     letter-spacing: 0.2px;
     text-transform: none;
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3)
+
     background-color: transparent;
     border: none;
+    background: url("../img/search.svg") 4px 18px no-repeat;
     outline: none;
 }
 
@@ -180,7 +185,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    margin-bottom: 40px;
     padding: 0;
     width: 500px;
     font-family: 'Open Sans', Arial, sans-serif;
