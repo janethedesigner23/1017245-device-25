@@ -605,8 +605,8 @@ button {
     margin-bottom: 94px;
 }
 
-.service-slider-list {
-    display: block;
+.service-slider {
+    display: flex;
     padding-bottom: 69px;
 }
 
@@ -615,7 +615,7 @@ button {
     flex-wrap: wrap;
 }
 
-.slider-element-separator {
+.slider-separator {
     border-right: 7px solid #000000;
     margin-right: 116px;
 }
