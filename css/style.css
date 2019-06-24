@@ -105,9 +105,14 @@ button {
     align-items: baseline;
 }
 
+.search {
+    height: 45px;
+}
+
 .search-form {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .search-form input {
