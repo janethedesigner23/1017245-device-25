@@ -121,6 +121,7 @@ button {
     opacity: 0.3;
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 .search-form input:hover {
@@ -147,6 +148,7 @@ button {
     letter-spacing: 0.15px;
     color: #000000;
     border: 2px solid #000000;
+    outline: none;
 }
 
 .search-form .search-button:hover {
@@ -1090,6 +1092,7 @@ body {
 }
 
 .modal-contact {
+    display: none;
     padding: 92px 100px 80px;
 }
 
@@ -1126,7 +1129,8 @@ body {
     line-height: 18px;
     color: #000000;
     background-color: #F2F2F2;
-    border: none;
+    border: 3px solid transparent;
+    outline: none;
 }
 
 .contact-element .textarea-input {
@@ -1141,7 +1145,8 @@ body {
     line-height: 18px;
     color: #000000;
     background-color: #F2F2F2;
-    border: none;
+    border: 3px solid transparent;
+    outline: none;
 }
 
 .contact-element-comment label {
@@ -1162,7 +1167,7 @@ body {
 
 .contact-element .form-input:focus, .contact-element .textarea-input:focus {
     background-color: #ffffff;
-    border: 3px solid #F8E297;
+    border-color: #F8E297;
 }
 
 .modal-close {
