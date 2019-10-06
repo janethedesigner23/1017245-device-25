@@ -130,6 +130,7 @@ button {
 
     background-color: transparent;
     border: none;
+    border-bottom: 2px solid transparent;
     background: url("../img/search.svg") 4px 18px no-repeat;
     outline: none;
 }
@@ -140,12 +141,12 @@ button {
 
 .search-form input:focus {
     opacity: 1;
-    border-bottom: 2px solid #000000;
+    border-bottom-color: #000000;
 }
 
 .search-form input:active {
     opacity: 1;
-    border-bottom: 2px solid #000000;
+    border-bottom-color: #000000;
 }
 
 .search-form .search-button {
