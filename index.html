@@ -558,16 +558,67 @@
       var link = document.querySelector(".contacts .button");
       var popup = document.querySelector(".modal-contact");
       var close = document.querySelector(".modal-close");
+      var form = popup.querySelector("form");
+      var userName = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=e-mail]");
+      var comment = popup.querySelector("[name=message]");
+
+      var isStorageSupport = true;
+      var nameFromStorage = "";
+      var emailFromStorage = "";
+
+      try {
+        nameFromStorage = localStorage.getItem("userName");
+      } catch (err) {
+        isStorageSupport = false;
+      }
+
+      try {
+        emailFromStorage = localStorage.getItem("email");
+      } catch (err) {
+        isStorageSupport = false;
+      }
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
+
+        if (nameFromStorage && emailFromStorage) {
+          userName.value = nameFromStorage;
+          email.value = emailFromStorage;
+          comment.focus();
+        }
+        else {
+          userName.focus();
+        }
       });
 
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("modal-show");
-      })
+      });
+
+      form.addEventListener("click", function (evt) {
+        if (!userName.value || !email.value) {
+          evt.preventDefault();
+          console.log("Укажите имя и адрес эл. почты");
+        }
+        else {
+          if (isStorageSupport) {
+            localStorage.setItem("userName", userName.value);
+            localStorage.setItem("email", email.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
     </script>
 
   </body>
